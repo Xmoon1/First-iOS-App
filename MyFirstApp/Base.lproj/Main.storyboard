@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDi-6Y-Syd">
-                                <rect key="frame" x="208.33333333333337" y="740" width="146.66666666666663" height="38"/>
+                                <rect key="frame" x="114" y="387" width="147" height="38"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -32,23 +32,37 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Button to tap">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonToChange" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vf8-J4-ICx"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OH1-x8-plY">
+                                <rect key="frame" x="166" y="263" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tDi-6Y-Syd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="214" id="Dgn-dV-UH2"/>
+                            <constraint firstItem="OH1-x8-plY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="263" id="1Yy-WX-rTy"/>
+                            <constraint firstItem="tDi-6Y-Syd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dj-i5-6lV"/>
+                            <constraint firstItem="tDi-6Y-Syd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AlO-FE-Mcq"/>
+                            <constraint firstItem="OH1-x8-plY" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="E1Z-BT-ulh"/>
                             <constraint firstItem="E3a-Gx-Y8H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="F6V-zd-BYO"/>
-                            <constraint firstItem="tDi-6Y-Syd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="G5l-qF-vJv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tDi-6Y-Syd" secondAttribute="trailing" constant="20" id="KUx-dJ-q9O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3a-Gx-Y8H" secondAttribute="trailing" constant="74" id="Kp7-rM-gls"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OH1-x8-plY" secondAttribute="trailing" constant="167" id="Mrp-A7-Fjk"/>
                             <constraint firstItem="E3a-Gx-Y8H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="N70-a5-YNX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textWelcomeLabel" destination="OH1-x8-plY" id="dE4-P5-ks9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.600000000000001" y="3.6945812807881775"/>
+            <point key="canvasLocation" x="20" y="2.9556650246305418"/>
         </scene>
     </scenes>
     <resources>
